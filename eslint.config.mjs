@@ -23,10 +23,19 @@ export default [
       '@typescript-eslint/no-empty-interface': 'off',
       '@typescript-eslint/no-namespace': 'off',
       'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
       'no-undef': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         { argsIgnorePattern: '^_' },
+      ],
+
+      // 💡 Força CRLF e impede erros "Delete \r"
+      'prettier/prettier': [
+        'error',
+        {
+          endOfLine: 'crlf',
+        },
       ],
     },
   },
